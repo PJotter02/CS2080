@@ -1,0 +1,11 @@
+FROM ubuntu:latest
+
+COPY finalscript.sh /finalscript.sh
+
+RUN chmod +x /finalscript.sh
+
+RUN ./finalscript.sh
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
