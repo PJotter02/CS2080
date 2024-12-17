@@ -11,4 +11,3 @@ sed -i 's/nginx/nginx (pronounced as EngineX)/g' /var/www/html/*.html
 service nginx stop
 service nginx start
 
-
